@@ -22,7 +22,7 @@ langmuir-probe-batch-processing/
 ├── requirements.txt
 └── pyproject.toml
 ```
-.
+
 ├── src/langmuir_probe_batch/
 │   ├── __init__.py
 │   ├── cli.py          # command-line workflow
