@@ -73,10 +73,16 @@ Run an import smoke test:
 ```bash
 python -c "import langmuir_probe_batch; print(langmuir_probe_batch.__version__)"
 ```
-Future cleanup ideas:
-Add sample test data
-Add unit tests for each calculation function
-Replace broad `except` blocks with specific exceptions
-Move plotting output paths into CLI configuration
-Convert legacy CamelCase function names to snake_case wrappers
-Add configuration files for probe geometry and gas species
+
+## Development
+Run an import smoke test:
+```bash
+python -c "import langmuir_probe_batch; print(langmuir_probe_batch.__version__)"
+```
+#Future cleanup ideas:
+- Add sample test data
+- Add unit tests for each calculation function
+- Replace broad `except` blocks with specific exceptions
+- Move plotting output paths into CLI configuration
+- Convert legacy CamelCase function names to snake_case wrappers
+- Add configuration files for probe geometry and gas species
