@@ -23,6 +23,7 @@ langmuir-probe-batch-processing/
 └── pyproject.toml
 ```
 
+```
 ├── src/langmuir_probe_batch/
 │   ├── __init__.py
 │   ├── cli.py          # command-line workflow
@@ -36,7 +37,8 @@ langmuir-probe-batch-processing/
 ├── .gitignore
 └── README.md
 ```
-Install
+## Install
+
 ```bash
 python -m venv .venv
 .venv\Scripts\activate  # Windows
