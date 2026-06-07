@@ -2,13 +2,13 @@
 
 Batch-processing tools for Langmuir probe current-voltage sweep analysis. The code estimates key plasma parameters including floating potential, plasma potential, electron temperature, ion saturation current, and plasma density.
 This repository was created from an existing research/prototype script and reorganized so it can be imported as a Python package or run from the command line.
-What this does
-Reads a folder of Langmuir probe Excel files
-Identifies bad data files and optionally quarantines them
-Calculates zero-crossing and floating potential
-Estimates plasma potential using a second-derivative method with fallback logic in the original functions
-Calculates electron current, electron temperature, density, and ion saturation current
-Writes a summary spreadsheet to `results/lp_data_post_processing_summary.xlsx`
+\nWhat this does
+\n *Reads a folder of Langmuir probe Excel files
+\n *Identifies bad data files and optionally quarantines them
+\n *Calculates zero-crossing and floating potential
+\n *Estimates plasma potential using a second-derivative method with fallback logic in the original functions
+\n *Calculates electron current, electron temperature, density, and ion saturation current
+\n *Writes a summary spreadsheet to `results/lp_data_post_processing_summary.xlsx`
 Repository structure
 ```text
 .
