@@ -13,16 +13,6 @@ This repository was created from an existing research/prototype script and reorg
 
 ## Repository Structure
 
-```text
-langmuir-probe-batch-processing/
-├── src/
-├── tests/
-├── docs/
-├── README.md
-├── requirements.txt
-└── pyproject.toml
-```
-
 ```
 ├── src/langmuir_probe_batch/
 │   ├── __init__.py
