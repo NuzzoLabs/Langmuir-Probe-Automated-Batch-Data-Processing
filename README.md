@@ -44,7 +44,7 @@ python -m venv .venv
 
 pip install -e .
 ```
-Run
+## Run
 ```bash
 lp-batch "path/to/langmuir_probe_excel_files" --output-dir results
 ```
@@ -60,26 +60,22 @@ By default, suspicious files are copied to `results/bad_data` but not deleted. T
 ```bash
 lp-batch "data" --remove-bad-data
 ```
-Input data expectations
+## Input data expectations
 Each input workbook should contain voltage and current columns. The original workflow assumes:
-Column 0: probe voltage / bias voltage
-Column 1: probe current
-A column named `Current` is used for bad-data screening
-Important notes
+- Column 0: probe voltage / bias voltage
+- Column 1: probe current
+- A column named `Current` is used for bad-data screening
+
+## Important notes
 This is still research/prototype code. The physics methods and fitting windows should be validated against known data before using results for publication, design decisions, or customer deliverables.
 The original script had local Windows paths and ran immediately when opened. Those paths were removed from the CLI workflow. A copy of the original script is preserved in `docs/original_script.py` for traceability.
-Development
-Run an import smoke test:
-```bash
-python -c "import langmuir_probe_batch; print(langmuir_probe_batch.__version__)"
-```
 
 ## Development
 Run an import smoke test:
 ```bash
 python -c "import langmuir_probe_batch; print(langmuir_probe_batch.__version__)"
 ```
-#Future cleanup ideas:
+Future cleanup ideas:
 - Add sample test data
 - Add unit tests for each calculation function
 - Replace broad `except` blocks with specific exceptions
