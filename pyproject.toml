@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langmuir-probe-batch-processing"
+version = "0.1.0"
+description = "Batch-processing tools for Langmuir probe I-V sweep analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Nick Nuzzo" }]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "scipy>=1.10",
+  "scikit-learn>=1.3",
+  "openpyxl>=3.1",
+  "xlwt>=1.3",
+]
+
+[project.scripts]
+lp-batch = "langmuir_probe_batch.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
